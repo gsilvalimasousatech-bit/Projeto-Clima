@@ -1,2 +1,18 @@
-# Projeto-Clima
- Este projeto realiza a coleta de dados climáticos utilizando a API OpenWeather. Os dados obtidos  são armazenados em um banco de dados MySQL e ficam disponíveis para consulta através de  uma API REST desenvolvida em Flask. Todo o ambiente é executado através de containers  Docker para garantir portabilidade e facilidade de implantação.
+# API de Clima com Flask, MySQL e Docker
+
+## Autor
+Gabriel Silva Lima de Sousa
+
+## Descrição
+Este projeto coleta dados de clima da API OpenWeather, armazena no MySQL e fornece rotas REST para consulta.
+
+## Como executar
+1. Instale Docker e Docker Compose.
+2. Execute: `docker-compose up --build`
+3. Acesse em: http://localhost:5000
+
+## Rotas
+- GET `/` - Testa API
+- GET `/clima` - Retorna último registro
+- POST `/coletar` - Coleta e salva novo registro
+
